@@ -38,28 +38,50 @@
   </head>
   <body>
     <header>
-      <div class="row contaner nav-header">
-        <div
-          class="co-md-12 d-flex align-items-center justify-content-between p-0"
-        >
+      <nav class="navbar contaner navbar-expand-lg bg-body-tertiary py-2">
+        <div class="container-fluid hero-nav">
           <h1 class="logo">
-            <a href="index.html"
+            <a href="#"
               ><span class="blue__colour">CalculatorMaster</span
               ><span class="green__colour">.net</span></a
             >
           </h1>
-          <nav>
-            <ul class="d-flex">
-              <li class="nav__item">
-                <a href="index.html">Calculator</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarText"
+            aria-controls="navbarText"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <!-- <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
-              <li class="nav__item">
-                <a href="age-calculator.html">Age Calculator</a>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li> -->
             </ul>
-          </nav>
+            <span class="navbar-text">
+              <ul class="d-flex">
+                <li class="nav__item">
+                  <a href="index.html">Calculator</a>
+                </li>
+                <li class="nav__item">
+                  <a href="age-calculator.html">Age Calculator</a>
+                </li>
+              </ul>
+            </span>
+          </div>
         </div>
-      </div>
+      </nav>
     </header>
     <div class="mt-5"></div>
     <section>
@@ -86,35 +108,27 @@
     </section>
     <div class="mt-5"></div>
     <footer>
-      <div class="contaner">
-        <div class="row">
-          <div
-            class="col-md-12 d-flex align-items-center justify-content-between"
-          >
-            <h1 class="logo">
-              <a href="index.html">
-                <span class="blue__color">CalculatorMaster</span
-                ><span class="green__color">.net</span>
-              </a>
-            </h1>
-            <nav>
-              <ul class="d-flex">
-                <li class="footer__item">
-                  <a href="about-us.html"><u>About us</u></a>
-                </li>
-                <li class="footer__item">
-                  <a href="contact-us.html"><u>contact us</u></a>
-                </li>
-                <li class="footer__item">
-                  <a href="privacy-policy.html"><u>privacy policy</u> </a>
-                </li>
-                <li class="footer__item">
-                  <a href="terms-of-use.html"><u>Terms of Use</u> </a>
-                </li>
-              </ul>
-            </nav>
-          </div>
-        </div>
+      <div class="hero-footer">
+        <h1 class="logo">
+          <a href="#">
+            <span class="blue__color">CalculatorMaster</span
+            ><span class="green__color">.net</span>
+          </a>
+        </h1>
+        <ul>
+          <li class="footer__item">
+            <a href="about-us.html"><u>About us</u></a>
+          </li>
+          <li class="footer__item">
+            <a href="contact-us.html"><u>contact us</u></a>
+          </li>
+          <li class="footer__item">
+            <a href="privacy-policy.html"><u>privacy policy</u> </a>
+          </li>
+          <li class="footer__item">
+            <a href="terms-of-use.html"><u>Terms of Use</u> </a>
+          </li>
+        </ul>
       </div>
     </footer>
 

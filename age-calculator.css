@@ -2,6 +2,7 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  /* outline: 3px solid lightgreen !important; */
 }
 
 body {
@@ -10,17 +11,26 @@ body {
   animation: fade 1s ease-in 1s;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+}
+
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
 }
-
 h1 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 p {
-  font-size: 3rem;
+  font-size: 2rem;
 }
 
 img {
@@ -37,7 +47,13 @@ ul {
   padding: 0;
   margin: 0;
 }
+.bg-body-tertiary {
+  background-color: #ffffff !important;
+}
 
+.row {
+  margin: 0rem;
+}
 .contaner {
   width: 80%;
   margin: 0 auto;
@@ -53,8 +69,17 @@ ul {
 header {
   border: 1px solid gray;
 }
-.nav-header {
-  padding: 2rem 0rem;
+.hero-nav {
+  padding: 2rem 0;
+}
+.nav__item {
+  font-size: 2rem;
+  font-weight: 700;
+  cursor: pointer;
+  color: #fff;
+}
+.nav__item + .nav__item {
+  margin-left: 2rem;
 }
 
 .logo {
@@ -62,15 +87,8 @@ header {
   font-weight: 700;
   color: #fff;
 }
-
-.nav__item + .nav__item {
-  margin-left: 2rem;
-}
-
-.nav__item {
-  font-size: 2rem;
-  font-weight: 700;
-  cursor: pointer;
+.age-calculator-header {
+  width: 50%;
 }
 
 .calculator {
@@ -195,18 +213,67 @@ header {
   background-color: #ddd;
 }
 
+/* footer */
+
 footer {
   border: 1px solid gray;
-  padding: 2rem 0rem;
+  background: #ffffff;
 }
 
-.footer__item + .footer__item {
-  margin-left: 2rem;
+.hero-footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  flex-wrap: wrap;
 }
 
-.footer__item {
+.hero-footer h1 {
+  color: white;
+  font-size: 2.8rem;
+  flex: 1 1 40rem;
+}
+
+.hero-footer ul {
   font-size: 2rem;
   font-weight: 700;
   cursor: pointer;
   color: #fff;
+  display: flex;
+  align-items: center;
+  list-style: none;
+  justify-content: space-between;
+  flex: 1 1 40rem;
+}
+
+/* media query */
+@media screen and (max-width: 889px) {
+  .contaner {
+    display: block;
+  }
+
+  .age-calculator-header {
+    width: 100%;
+  }
+
+  html {
+    font-size: 45%;
+  }
+
+  .form-wrapper {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .hero-footer ul {
+    margin-bottom: 1.5rem;
+  }
+
+  #logo {
+    padding: 2rem;
+  }
 }
